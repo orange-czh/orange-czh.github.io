@@ -7,7 +7,15 @@
         .container { width: 80%; margin: auto; overflow: hidden; }
         header { background: #800080; color: white; padding: 10px; }
         nav { float: right; }
-        nav a { color: white; text-decoration: none; padding: 5px 20px; }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            padding: 5px 20px; 
+        }
+        nav a:hover {
+            color: red; /* 导航链接在悬停时变为红色 */
+            text-decoration: underline; /* 悬停时出现下划线 */
+        }
         footer { background: #800080; color: white; text-align: center; padding: 10px; }
         table { width: 100%; border-collapse: collapse; }
         th, td { border: 1px solid black; padding: 8px; text-align: left; }
@@ -19,7 +27,18 @@
             text-align: center; /* 使内容居中 */
         }
         .teacher-column { width: 30%; } /* 为“教师”列设置宽度 */
+        
+        /* 添加超链接的基础样式 */
+        a {
+            color: blue; /* 设置超链接的颜色为蓝色 */
+            text-decoration: none; /* 移除下划线 */
+        }
 
+        /* 当鼠标悬停在超链接上时的样式 */
+        a:hover {
+            color: red; /* 悬停时字体变为红色 */
+            text-decoration: underline; /* 悬停时出现下划线 */
+        }
     </style>
 </head>
 <body>
