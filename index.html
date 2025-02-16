@@ -2,31 +2,69 @@
 <html>
 <head>
     <title>Zihan Cheng's Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Times New Roman', Arial, sans-serif; line-height: 1.6; }
+        body { 
+            font-family: 'Montserrat', Arial, sans-serif; 
+            line-height: 1.6; 
+            background: linear-gradient(135deg, #f0f4c3, #e0f7fa);
+            margin: 0;
+            padding: 0;
+        }
         .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #800080; color: white; padding: 10px; }
+        header { 
+            background: #6a1b9a; 
+            color: white; 
+            padding: 20px 0; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
         nav { float: right; }
         nav a { 
             color: white; 
             text-decoration: none; 
-            padding: 5px 20px; 
+            padding: 10px 20px; 
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline; /* 导航链接在悬停时只出现下划线 */
+            color: #ffeb3b;
         }
-        footer { background: #800080; color: white; text-align: center; padding: 10px; }
+        footer { 
+            background: #6a1b9a; 
+            color: white; 
+            text-align: center; 
+            padding: 20px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+        }
         
-        /* 添加超链接的基础样式 */
         a {
-            color: blue; /* 设置超链接的颜色为蓝色 */
-            text-decoration: none; /* 移除下划线 */
+            color: #1976d2; 
+            text-decoration: none; 
+            transition: color 0.3s, text-shadow 0.3s;
         }
 
-        /* 当鼠标悬停在超链接上时的样式 */
         a:hover {
-            color: red; /* 悬停时字体变为红色 */
-            text-decoration: underline; /* 悬停时出现下划线 */
+            color: #d32f2f; 
+            text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+        }
+
+        section {
+            margin: 20px 0; 
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+
+        p {
+            text-align: justify;
         }
     </style>
 </head>
@@ -53,7 +91,6 @@
             <a href="https://hcdata.nju.edu.cn/" target="_blank">南京大学健康医疗大数据国家研究院</a><br>
             导师: <a href="https://cs.nju.edu.cn/shiyh/index.htm" target="_blank">史颖欢</a>教授 <br>
             邮箱: chengzihan@sjtu.edu.cn or czh@smail.nju.edu.cn</p>
-
         </section>
 
         <section id="research">
@@ -65,11 +102,9 @@
             <br>At present, my research interest is in artificial intelligence, especially the application of computer vision in clinical medical diagnosis.</p>
         </section>
 
-
         <section id="publication">
             <h2>Publications</h2>
             <p>[1]<a href="https://item.jd.com/10094637774451.html" target="_blank">《口袋里的人工智能————AI与医疗健康》</a>，广东科技出版社，编委.</p>
-           
         </section>
         
         <section id="honors">
@@ -99,23 +134,17 @@
         <section id="service">
             <h2>Service</h2>
             <p>[1] 2025.02-2025.06 Teaching Assistant for <a href="https://discrete-mathematics-syh.github.io/2025" target="_blank">Discrete Mathematics</a><br>
-                [2] 2024.02-2024.06 Teaching Assistant for <a href="https://discrete-mathematics-syh.github.io/" target="_blank">Discrete Mathematics</a><br>
+                [2] 2024.02-2024.06 Teaching Assistant for Discrete Mathematics<br>
                 [3] 2023.02-2023.06 Teaching Assistant for Discrete Mathematics<br>
-                <!--[3]2022.09-2023.02 Teaching Assistant for C Programming(Level-1)<br>
-                [4]2022.02-2022.06 Teaching Assistant for Python Programming<br>
-                [5]第十一届CCF-BigData会议组委会接送组负责人（2023.09），首届青云菁英创新发展论坛暨第二届南京大学AI女科学家论坛组委会接送组负责人（2024.06）-->
             </p>
-          <p>[1] 2020.09-2023.06 20级计科1班团支部书记<br>
+            <p>[1] 2020.09-2023.06 20级计科1班团支部书记<br>
                 [2] 2021.08-2022.08 南京大学开甲书院团总支副书记<br>
                 [3] 2022.08-2023.09 南京大学计算机系（现南京大学计算机学院）团委副书记（学生）<br>
-              [4] 2023.09-2024.07 南京大学计算机系与软件学院党委（现南京大学计算机学院软件学院人工智能学院党委）本科生党支部委员<br>
-                [5] 中国共产党南京大学计算机系与软件学院第三次代表大会代表（2023-2028），中国共产主义青年团南京大学第二十一次代表大会代表（2024-2029），南京大学第25次学生代表大会代表（2021-2022），
-              南京大学第26次学生代表大会代表、常任代表、提案监察委员会委员（2022-2023）。<br>
-                <!--[6]2022.11-2023.11 南京大学第26次学生代表大会代表、常任代表、提案监察委员会委员<br>
-            </p>-->
+                [4] 2023.09-2024.07 南京大学计算机系与软件学院党委（现南京大学计算机学院软件学院人工智能学院党委）本科生党支部委员<br>
+                [5] 中国共产党南京大学计算机系与软件学院第三次代表大会代表（2023-2028），中国共产主义青年团南京大学第二十一次代表大会代表（2024-2029），
+                南京大学第25次学生代表大会代表（2021-2022），南京大学第26次学生代表大会代表、常任代表、提案监察委员会委员（2022-2023）<br>
+            </p>
         </section>
-
-   
     </div>
 
     <footer>
