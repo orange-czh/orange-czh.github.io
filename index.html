@@ -72,6 +72,26 @@
         p {
             text-align: justify;
         }
+
+
+        /* 新增的样式用于照片布局 */
+        .profile-photo {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 0 auto 20px auto; /* 上下20px间距，左右自动居中 */
+        }
+        
+        @media (max-width: 768px) {
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -91,6 +111,7 @@
     <div class="container">
         <section id="intro">
             <h2>Introduction</h2>
+            <img src="1.jpg" alt="Zihan Cheng's Profile Photo" class="profile-photo">
             <p>程子涵, M.D student<br>
             <a href="https://www.shsmu.edu.cn/" target="_blank">上海交通大学医学院</a><br>
             <a href="https://hcdata.nju.edu.cn/" target="_blank">南京大学健康医疗大数据国家研究院</a><br>
