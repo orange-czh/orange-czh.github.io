@@ -203,10 +203,44 @@
         </section>
     </div>
     
-    <!-- MapMyVisitors 地图统计插件 -->
-    <div style="text-align:center; margin: 30px 0;">
-        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=d3fdcJlUkHyR_e1wNXRD3o87gtHk1mzSfRJyv4wf_lY&cl=ffffff&w=a"></script>
-    </div>
+<!-- ===== 方案 A：固定小框（推荐） ===== -->
+<style>
+/* 小尺寸容器：直接限制宽高 */
+.mapmyvisitors-box {
+  width: 320px;        /* 可改成你想要的宽度 */
+  height: 200px;       /* 可改成你想要的高度 */
+  margin: 30px auto;   /* 居中显示 */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  background: #000;    /* 背景色可选，用于避免空白闪烁 */
+  position: relative;
+  text-align: center;
+  line-height: 200px;  /* 在加载前可以显示占位文字 */
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* 试着让第三方生成的 iframe/div 符合容器尺寸 */
+.mapmyvisitors-box iframe,
+.mapmyvisitors-box div,
+.mapmyvisitors-box .mmv_map {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  display: block !important;
+  position: absolute !important;
+  top: 0; left: 0;
+}
+</style>
+
+<div class="mapmyvisitors-box" aria-hidden="false">
+  Loading map...
+  <!-- 使用 https 链接 -->
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=d3fdcJlUkHyR_e1wNXRD3o87gtHk1mzSfRJyv4wf_lY&cl=ffffff&w=a"></script>
+</div>
+
     
     <footer>
         <p>Latest Update：2025.05 &copy; 2025</p>
